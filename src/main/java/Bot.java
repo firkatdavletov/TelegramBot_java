@@ -45,7 +45,9 @@ public class Bot extends TelegramLongPollingBot {
         if (message != null && message.hasText()) {
             switch (message.getText()) {
                 case "/help":
-                    sendMsg(message, "Чем могу помочь?");
+                    sendMsg(message, "Привет! Я бот, созданный Фиркатом."+
+                            "Пока что я умею только узнавать погоду в разных городах." +
+                            "Напише мне название города и я отвечу:)");
                     break;
                 case "/settings":
                     sendMsg(message, "Что будем настраивать?");
@@ -78,10 +80,10 @@ public class Bot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "#";
+        return "Firkats_bot";
     }
 
     public String getBotToken() {
-        return "#";
+        return "1590085566:AAGZPvUtMm906O-ZYtK74wo7fUdV6f35wXs";
     }
 }
